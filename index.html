@@ -108,11 +108,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 @media (max-width:820px){
   section{padding:64px 0}
   .hero .wrap,.two,.lists,.contact{grid-template-columns:1fr}
-  .hero-logo{width:170px}
-  .hero-top{flex-direction:column;align-items:flex-start;gap:24px}
+  .hero-logo{width:180px}
+  .hero-top{gap:28px}
   .packs{grid-template-columns:1fr}
   .cards{grid-template-columns:1fr}
   nav{display:none}
+}
+@media (max-width:600px){
+  .hero-logo{width:160px}
+  .hero-top{flex-direction:column;align-items:flex-start;gap:24px}
 }
 </style>
 </head>
