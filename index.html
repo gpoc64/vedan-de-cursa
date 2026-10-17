@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vedan de Cursa — Diventa sponsor</title>
+<meta name="description" content="La corsa di tutto il paese, organizzata dall'Oratorio San Luigi di Vedano al Lambro. Scopri gli spazi sponsor della 5 km.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+:root{--amber:#FFB10A;--ink:#1A1A1A;--ink2:#3D3D3D;--cream:#FFF6E3;--white:#FFFFFF;--line:#1A1A1A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Archivo',system-ui,sans-serif;color:var(--ink);background:var(--white);font-size:17px;line-height:1.55}
+a{color:var(--ink)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-stretch:112%}
+h1,h2,h3{margin:0}
+h2{font-size:clamp(32px,5vw,52px);line-height:1;font-weight:850;font-stretch:72%;text-transform:uppercase;text-wrap:balance}
+.marker{font-family:'Permanent Marker',cursive;font-weight:400}
+section{padding:88px 0}
+.hl{box-shadow:inset 0 -.38em 0 var(--amber);-webkit-box-decoration-break:clone;box-decoration-break:clone}
+
+/* nav */
+header.top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border-bottom:1.5px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;flex-wrap:wrap}
+.brand{font-family:'Permanent Marker',cursive;font-size:24px;text-decoration:none}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:700;font-size:15px}
+nav a:hover{text-decoration:underline}
+.btn{display:inline-flex;align-items:center;min-height:46px;padding:0 22px;border-radius:999px;background:var(--amber);color:var(--ink);font-weight:800;text-decoration:none;border:2px solid var(--ink)}
+.btn:hover{background:#E09600}
+.btn.ghost{background:transparent}
+
+/* hero */
+.hero{padding:72px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.hero h1{font-family:'Permanent Marker',cursive;font-weight:400;font-size:clamp(64px,11vw,128px);line-height:.92}
+.hero p.lead{font-size:clamp(20px,2.4vw,26px);line-height:1.3;font-weight:700;font-stretch:85%;margin:24px 0 0}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.pill{border:1.5px solid var(--ink);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:700}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.sun{width:100%;max-width:360px;justify-self:center}
+.date{margin-top:28px;background:var(--amber);border-radius:8px;padding:14px 18px;display:inline-block}
+.date strong{display:block;font-size:24px;font-stretch:75%;text-transform:uppercase;line-height:1.1}
+
+/* corsa */
+.cream{background:var(--cream)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{background:var(--white);border-radius:8px;padding:18px}
+.card h3{font-size:18px;font-weight:800}
+.card p{margin:4px 0 0;font-size:15px;line-height:1.45}
+.goals{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:14px}
+.goals li{display:flex;gap:12px}
+.goals li::before{content:"";flex:0 0 12px;height:12px;margin-top:7px;border-radius:6px;background:var(--amber);outline:1.5px solid var(--ink)}
+
+/* perché */
+.benefits{list-style:none;padding:0;margin:40px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;counter-reset:b}
+.benefits li{counter-increment:b;border-top:2px solid var(--ink);padding-top:16px}
+.benefits li::before{content:counter(b);display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:17px;background:var(--amber);font-weight:800;margin-bottom:10px}
+.benefits strong{display:block;font-size:18px}
+.quote{margin-top:48px;font-size:clamp(26px,3.5vw,38px)}
+
+/* spazi */
+.yellow{background:var(--amber)}
+.bignum{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.bignum .n{font-size:clamp(80px,12vw,140px);line-height:.85;font-weight:900;font-stretch:70%}
+.route{position:relative;margin-top:36px;padding-left:44px;display:grid;gap:26px;max-width:720px}
+.route::before{content:"";position:absolute;left:12px;top:10px;bottom:10px;width:4px;background:var(--ink)}
+.stop{position:relative}
+.stop::before{content:"";position:absolute;left:-44px;top:2px;width:28px;height:28px;border-radius:14px;background:var(--ink)}
+.stop.small::before{left:-40px;top:6px;width:20px;height:20px;background:var(--white);border:4px solid var(--ink)}
+.stop .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.stop h3{font-size:24px;font-weight:850;font-stretch:80%;text-transform:uppercase}
+.stop .c{font-weight:800}
+.stop p{margin:4px 0 0}
+.title-box{background:var(--white);border:2px solid var(--ink);border-radius:8px;padding:16px 20px;display:flex;gap:16px;align-items:center;margin-top:28px;max-width:720px}
+.title-box .n{font-size:40px;font-weight:900;font-stretch:70%}
+
+.lists{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:40px}
+.lists h3{font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-stretch:112%;padding-bottom:10px;border-bottom:2px solid var(--ink);margin-bottom:8px}
+.items{list-style:none;margin:0;padding:0}
+.items li{display:flex;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid #C8C8C8}
+.items .n{flex:0 0 40px;text-align:right;font-size:32px;font-weight:900;font-stretch:70%;line-height:1}
+.items strong{font-size:17px}
+.total{margin-top:40px;background:var(--amber);border-radius:8px;padding:20px 24px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.total .n{font-size:64px;line-height:.9;font-weight:900;font-stretch:70%}
+
+/* pacchetti */
+.packs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
+.pack{background:var(--cream);border-radius:8px;padding:22px}
+.pack.gold{background:var(--white);border:2px solid var(--ink)}
+.pack h3{font-size:22px;font-weight:850;font-stretch:85%;text-transform:uppercase}
+.pack p{margin:6px 0 0}
+.note{margin-top:20px}
+
+/* contatti */
+.contact{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:end;margin-top:28px}
+.qr{width:140px;height:140px;border:2px dashed var(--ink);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:14px;padding:8px}
+footer{border-top:1.5px solid var(--ink);padding:28px 0;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:820px){
+  section{padding:64px 0}
+  .hero .wrap,.two,.lists,.contact{grid-template-columns:1fr}
+  .sun{max-width:200px;justify-self:start;order:-1}
+  .packs{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  nav{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">Vedan de Cursa</a>
+    <nav aria-label="Sezioni">
+      <a href="#corsa">La corsa</a>
+      <a href="#perche">Perché sostenerci</a>
+      <a href="#spazi">Spazi sponsor</a>
+      <a href="#pacchetti">Pacchetti</a>
+    </nav>
+    <a class="btn" href="#contatti">Diventa sponsor</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Oratorio San Luigi · Vedano al Lambro</div>
+      <h1>Vedan<br>de Cursa</h1>
+      <p class="lead">La corsa di tutto il paese.<br><span class="hl">Corri con noi, sostieni la comunità.</span></p>
+      <div class="pills"><span class="pill">5 km per tutti</span><span class="pill">Vedanina per i piccoli</span><span class="pill">Festa all'Oratorio</span></div>
+      <div class="date"><span class="kicker">Venerdì 11 giugno 2027</span><strong>Cerchiamo compagni di strada</strong></div>
+      <div class="cta"><a class="btn" href="#spazi">Scopri gli spazi sponsor</a><a class="btn ghost" href="#contatti">Contattaci</a></div>
+    </div>
+    <svg class="sun" viewBox="0 0 100 100" aria-hidden="true">
+      <g stroke="#FFB10A" stroke-width="4.5" stroke-linecap="round" fill="none">
+        <line x1="50" y1="5" x2="50" y2="17"/>
+        <line x1="50" y1="5" x2="50" y2="15" transform="rotate(32 50 50)"/>
+        <line x1="50" y1="6" x2="50" y2="17" transform="rotate(61 50 50)"/>
+        <line x1="50" y1="5" x2="50" y2="14" transform="rotate(92 50 50)"/>
+        <line x1="50" y1="6" x2="50" y2="17" transform="rotate(121 50 50)"/>
+        <line x1="50" y1="5" x2="50" y2="15" transform="rotate(152 50 50)"/>
+        <line x1="50" y1="5" x2="50" y2="17" transform="rotate(181 50 50)"/>
+        <line x1="50" y1="6" x2="50" y2="15" transform="rotate(212 50 50)"/>
+        <line x1="50" y1="5" x2="50" y2="17" transform="rotate(241 50 50)"/>
+        <line x1="50" y1="6" x2="50" y2="14" transform="rotate(272 50 50)"/>
+        <line x1="50" y1="5" x2="50" y2="16" transform="rotate(301 50 50)"/>
+        <line x1="50" y1="6" x2="50" y2="17" transform="rotate(331 50 50)"/>
+        <path d="M51 50 c2 -2 5 0 4 3 c-1 4 -7 5 -9 1 c-3 -5 1 -11 7 -11 c7 0 11 7 9 13 c-2 7 -11 11 -18 7 c-8 -4 -10 -15 -4 -22 c4 -5 11 -6 16 -5"/>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section id="corsa" class="cream">
+  <div class="wrap two">
+    <div>
+      <div class="kicker">La nostra corsa</div>
+      <h2 class="marker" style="text-transform:none;font-stretch:100%;margin-top:12px">Si corre per esserci.</h2>
+      <p>Ogni anno l'Oratorio San Luigi chiama a raccolta Vedano: 5 km non competitivi tra le vie del paese e i sentieri del Parco, senza l'ansia del cronometro. Corrono nonni e nipoti, runner e chi cammina chiacchierando. Poi tutti in cortile, per la festa.</p>
+      <div class="kicker" style="margin-top:32px">Dove vogliamo arrivare</div>
+      <ul class="goals">
+        <li><span><strong>Stare insieme.</strong> Una giornata che unisce generazioni, quartieri e associazioni.</span></li>
+        <li><span><strong>Sostenere l'Oratorio.</strong> Le risorse raccolte tornano in attività per ragazzi e famiglie.</span></li>
+        <li><span><strong>Crescere senza perdere l'anima.</strong> Iscrizione online, ritiro pacco con QR, foto e diretta sul maxischermo.</span></li>
+      </ul>
+    </div>
+    <div class="cards">
+      <div class="card"><h3>5 km per tutti</h3><p>Famiglie, bambini e amatori, senza classifica.</p></div>
+      <div class="card"><h3>La maglia ufficiale</h3><p>Grafica nuova ogni anno, ai primi 500 iscritti.</p></div>
+      <div class="card"><h3>Le salamelle</h3><p>Il post-gara all'Oratorio, preparato dai volontari.</p></div>
+      <div class="card"><h3>La Vedanina</h3><p>Percorsi a misura di bambino, per giocare allo sport.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="perche">
+  <div class="wrap">
+    <div class="kicker">Perché sostenerci</div>
+    <h2 style="margin-top:12px;max-width:760px">Un'azienda che corre con il suo paese</h2>
+    <p style="max-width:680px">La Vedan de Cursa porta in strada famiglie, bambini, runner e volontari. Stare al loro fianco vuol dire farsi conoscere dove si vive e si lavora, e restituire qualcosa a chi tiene viva la comunità.</p>
+    <ol class="benefits">
+      <li><strong>Visibilità sul territorio</strong>Sul percorso, all'Oratorio, sul sito e sui canali social dell'evento.</li>
+      <li><strong>Valore sociale</strong>Il contributo sostiene le attività dell'Oratorio San Luigi per ragazzi e famiglie.</li>
+      <li><strong>Dipendenti in squadra</strong>Corporate Challenge: pacchetti d'iscrizione, team building e trofeo per l'azienda più numerosa.</li>
+      <li><strong>Contenuti che girano</strong>Il vostro logo sulle foto ufficiali che i runner scaricano e condividono.</li>
+      <li><strong>Nuovi clienti</strong>Hub Vantaggi Runner: sconti nei negozi partner, sbloccati con il numero d'iscrizione.</li>
+    </ol>
+    <p class="quote marker">"Si corre per il piacere di esserci."</p>
+  </div>
+</section>
+
+<section id="spazi" class="yellow">
+  <div class="wrap">
+    <div class="kicker">Spazi sul percorso</div>
+    <div class="bignum" style="margin-top:12px"><span class="n">9</span><h2>Firma un pezzo dei 5 km</h2></div>
+    <div class="title-box"><span class="n">1</span><span><strong>Title sponsor.</strong> Il vostro nome accanto a quello della corsa, su tutti i materiali.</span></div>
+    <div class="route">
+      <div class="stop"><div class="row"><h3>Partenza</h3><span class="c">1 spazio esclusivo</span></div><p>Arco di partenza, griglia e countdown con lo speaker che annuncia il vostro marchio.</p></div>
+      <div class="stop small"><div class="row"><h3>Km 1 – 5</h3><span class="c">5 spazi</span></div><p>Un chilometro a testa, in esclusiva: striscioni, arco gonfiabile e una zona tifo con i vostri dipendenti.</p></div>
+      <div class="stop small"><div class="row"><h3>Ristoro sul percorso</h3><span class="c">1 spazio</span></div><p>Il punto acqua a metà gara, con il cartello "Offerto da…" e il vostro logo sui bicchieri.</p></div>
+      <div class="stop"><div class="row"><h3>Arrivo</h3><span class="c">1 spazio esclusivo</span></div><p>Arco d'arrivo, foto-finish brandizzato e palco delle premiazioni: il momento più fotografato.</p></div>
+    </div>
+    <p style="margin-top:28px">Ogni spazio sul percorso include il logo sul sito e nella newsletter agli iscritti.</p>
+  </div>
+</section>
+
+<section class="cream">
+  <div class="wrap">
+    <div class="kicker">All'Oratorio e nel kit gara</div>
+    <h2 style="margin-top:12px">La festa ha tanti angoli da firmare</h2>
+    <div class="lists">
+      <div>
+        <h3>Spazi all'Oratorio · 14</h3>
+        <ul class="items">
+          <li><span class="n">6</span><span><strong>Gazebo nel Villaggio.</strong> Prova prodotto, demo e giochi per bambini.</span></li>
+          <li><span class="n">4</span><span><strong>Cibo e bevande.</strong> Salamelle, bibite, dolci, acqua e frutta: su ogni banco il cartello "Offerto da…".</span></li>
+          <li><span class="n">1</span><span><strong>Maxischermo live.</strong> La corsa in diretta per chi tifa in cortile.</span></li>
+          <li><span class="n">1</span><span><strong>Area Vedanina.</strong> Lo spazio gioco e corsa dei più piccoli.</span></li>
+          <li><span class="n">1</span><span><strong>Area recovery.</strong> Stretching e fisioterapisti dopo il traguardo.</span></li>
+          <li><span class="n">1</span><span><strong>Photobooth all'arrivo.</strong> Foto ricordo con cornice brandizzata.</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Da portare a casa · 22</h3>
+        <ul class="items">
+          <li><span class="n">1</span><span><strong>Pettorale.</strong> Il vostro logo sul numero di gara di ogni runner.</span></li>
+          <li><span class="n">5</span><span><strong>Maglia tecnica.</strong> 1 logo fronte e 4 su manica e retro, su 500 maglie.</span></li>
+          <li><span class="n">9</span><span><strong>Sacca gara.</strong> 1 logo sulla sacca e 8 inserti: campioni, coupon, gadget.</span></li>
+          <li><span class="n">6</span><span><strong>Premi.</strong> Categorie, Vedanina, squadra più numerosa e premio Eco-Run.</span></li>
+          <li><span class="n">1</span><span><strong>Foto ufficiali.</strong> Logo in filigrana su ogni scatto scaricato.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="total"><span class="n">45</span><span>spazi in tutto, per ogni budget: dalla bottega sotto casa all'azienda del territorio.</span></div>
+  </div>
+</section>
+
+<section id="pacchetti">
+  <div class="wrap">
+    <div class="kicker">Diventa partner</div>
+    <h2 style="margin-top:12px">Tre modi per esserci</h2>
+    <div class="packs">
+      <div class="pack gold"><h3>Oro</h3><p>Title sponsor, Partenza o Arrivo. Logo fronte sulla maglia, gazebo nel Villaggio, citazione dello speaker.</p></div>
+      <div class="pack"><h3>Argento</h3><p>Un chilometro o uno spazio all'Oratorio. Logo su sacca o premi, vetrina sul sito.</p></div>
+      <div class="pack"><h3>Negozio Amico</h3><p>Vetrofania ufficiale, coupon nella sacca gara e posto nell'Hub Vantaggi Runner.</p></div>
+    </div>
+    <p class="note">Pacchetti componibili, listino su richiesta. Accettiamo anche contributi in beni e servizi.</p>
+  </div>
+</section>
+
+<section id="contatti" class="yellow">
+  <div class="wrap">
+    <div class="kicker">Parliamone</div>
+    <h2 style="margin-top:12px">Corriamo insieme per Vedano</h2>
+    <div class="contact">
+      <div>
+        <p style="font-size:20px;line-height:1.5;margin:0">[NOME REFERENTE]<br>[TELEFONO]<br><a href="mailto:[EMAIL]">[EMAIL]</a></p>
+        <p style="margin-top:16px"><a href="https://vedandacursa.blogspot.com"><strong>vedandacursa.blogspot.com</strong></a></p>
+      </div>
+      <div class="qr">[QR al sito]</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>Organizza l'Oratorio San Luigi · Vedano al Lambro</span><span class="marker">Vedan de Cursa</span></div>
+</footer>
+</body>
+</html>
