@@ -26,7 +26,7 @@ section{padding:88px 0}
 
 /* nav */
 header.top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border-bottom:1.5px solid var(--line)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;flex-wrap:wrap}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;flex-wrap:nowrap}
 .brand{font-family:'Permanent Marker',cursive;font-size:24px;text-decoration:none}
 nav{display:flex;gap:20px;flex-wrap:wrap}
 nav a{text-decoration:none;font-weight:700;font-size:15px}
@@ -115,6 +115,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   nav{display:none}
 }
 @media (max-width:600px){
+  header.top .wrap{flex-wrap:nowrap}
+  .brand{font-size:19px;white-space:nowrap}
+  header.top .btn{min-height:44px;padding:0 16px;font-size:15px;white-space:nowrap}
   .hero-logo{width:112px}
   .hero-top{gap:16px;align-items:flex-start}
   .hero p.lead{font-size:19px;line-height:1.25}
