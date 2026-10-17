@@ -31,9 +31,9 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 nav{display:flex;gap:20px;flex-wrap:wrap}
 nav a{text-decoration:none;font-weight:700;font-size:15px}
 nav a:hover{text-decoration:underline}
-.btn{display:inline-flex;align-items:center;min-height:46px;padding:0 22px;border-radius:999px;background:var(--amber);color:var(--ink);font-weight:800;text-decoration:none;border:2px solid var(--ink)}
+.btn{display:inline-flex;align-items:center;min-height:46px;padding:0 22px;border-radius:999px;background:var(--amber);color:var(--ink);font-weight:800;text-decoration:none}
 .btn:hover{background:#E09600}
-.btn.ghost{background:transparent}
+.btn.ghost{background:var(--cream)}
 
 /* hero */
 .hero{padding:72px 0 88px}
@@ -42,7 +42,7 @@ nav a:hover{text-decoration:underline}
 .hero h1{line-height:0;flex:0 0 auto}
 .hero p.lead{font-size:clamp(22px,3vw,34px);line-height:1.3;font-weight:700;font-stretch:85%;margin:24px 0 0}
 .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
-.pill{border:1.5px solid var(--ink);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:700}
+.pill{background:var(--cream);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:700}
 .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
 .hero-logo{display:block;width:240px;height:auto;flex:0 0 auto}
 .date{margin-top:28px;background:var(--amber);border-radius:8px;padding:14px 18px;display:inline-block}
@@ -57,7 +57,7 @@ nav a:hover{text-decoration:underline}
 .card p{margin:4px 0 0;font-size:15px;line-height:1.45}
 .goals{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:14px}
 .goals li{display:flex;gap:12px}
-.goals li::before{content:"";flex:0 0 12px;height:12px;margin-top:7px;border-radius:6px;background:var(--amber);outline:1.5px solid var(--ink)}
+.goals li::before{content:"";flex:0 0 12px;height:12px;margin-top:7px;border-radius:6px;background:var(--amber)}
 
 /* perché */
 .benefits{list-style:none;padding:0;margin:40px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;counter-reset:b}
@@ -74,12 +74,12 @@ nav a:hover{text-decoration:underline}
 .route::before{content:"";position:absolute;left:12px;top:10px;bottom:10px;width:4px;background:var(--ink)}
 .stop{position:relative}
 .stop::before{content:"";position:absolute;left:-44px;top:2px;width:28px;height:28px;border-radius:14px;background:var(--ink)}
-.stop.small::before{left:-40px;top:6px;width:20px;height:20px;background:var(--white);border:4px solid var(--ink)}
+.stop.small::before{left:-40px;top:6px;width:20px;height:20px;background:var(--white)}
 .stop .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
 .stop h3{font-size:24px;font-weight:850;font-stretch:80%;text-transform:uppercase}
 .stop .c{font-weight:800}
 .stop p{margin:4px 0 0}
-.title-box{background:var(--white);border:2px solid var(--ink);border-radius:8px;padding:16px 20px;display:flex;gap:16px;align-items:center;margin-top:28px;max-width:720px}
+.title-box{background:var(--white);border-radius:8px;padding:16px 20px;display:flex;gap:16px;align-items:center;margin-top:28px;max-width:720px}
 .title-box .n{font-size:40px;font-weight:900;font-stretch:70%}
 
 .lists{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:40px}
@@ -94,14 +94,14 @@ nav a:hover{text-decoration:underline}
 /* pacchetti */
 .packs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
 .pack{background:var(--cream);border-radius:8px;padding:22px}
-.pack.gold{background:var(--white);border:2px solid var(--ink)}
+.pack.gold{background:var(--amber)}
 .pack h3{font-size:22px;font-weight:850;font-stretch:85%;text-transform:uppercase}
 .pack p{margin:6px 0 0}
 .note{margin-top:20px}
 
 /* contatti */
 .contact{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:end;margin-top:28px}
-.qr{width:140px;height:140px;border:2px dashed var(--ink);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:14px;padding:8px}
+.qr{width:140px;height:140px;background:var(--white);border-radius:8px;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:14px;padding:8px}
 footer{border-top:1.5px solid var(--ink);padding:28px 0;font-size:15px}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
